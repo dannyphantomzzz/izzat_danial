@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery with Heading</title>
+  <style>
+    /* CSS Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      color: #333;
+      text-align: center;
+    }
+
+    .gallery-container {
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Increased min width */
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 100%; /* Ensures images fill the grid cells */
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Heading -->
+  <h1>UiTM FAMILY</h1>
+
+  <!-- Gallery -->
+  <div class="gallery-container">
+    <div class="gallery">
+      <img src="ramai.jpg" alt="Image 1">
+      <img src="amj.jpg" alt="Image 2">
+      <img src="atep.jpg" alt="Image 3">
+      <img src="penang.jpg" alt="Image 4">
+      <img src="rumah.jpg" alt="Image 5">
+      <img src="malam.jpg" alt="Image 6">
+      <img src="yan.jpg" alt="Image 7">
+      <img src="motor.jpg" alt="Image 8">
+      <img src="dp.jpg" alt="Image 9">
+      <img src="sem2.jpg" alt="Image 10">
+      <img src="uk.jpg" alt="Image 11">
+      <img src="black.jpg" alt="Image 11">
+
+
+    </div>
+  </div>
+</body>
+</html>
