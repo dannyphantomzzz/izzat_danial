@@ -3,29 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<h1><u><center>IZZAT'S GALLERY</h1></u></center>
-<title>Izzat's Gallery</title>
-
- <style>
+    <title>Izzat's Gallery</title>
+    <style>
         body {
             margin: 0;
             padding: 0;
             background: url('rest.jpg') no-repeat center center fixed;
-            background-size: cover; 
+            background-size: cover;
+            text-align: center; 
+        }
+
+        h1 {
+            text-decoration: underline;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery img, .gallery video {
+            width: 100%;
+            height: auto; 
         }
     </style>
 </head>
 <body>
-<center>
 
-	<img src="ring.jpg" width="500" height="400">
-	<img src="formal.jpg" width="500" height="400">
-	<img src="hujan.jpg" width="500" height="400">
-	<img src="moto.jpg" width="500" height="400">
-	<img src="jalan.jpg" width="500" height="400">
-	<img src="peace.jpg" width="500" height="400">
-	<img src="duduk.jpg" width="500" height="400">
-	<img src="dulu.jpg" width="500" height="400">
-	<video src="test.mov" width="500" height="400" controls >
-	
-</center>
+    <h1>IZZAT'S GALLERY</h1>
+
+    <div class="gallery">
+        <img src="ring.jpg" alt="Ring">
+        <img src="formal.jpg" alt="Formal">
+        <img src="hujan.jpg" alt="Hujan">
+        <img src="moto.jpg" alt="Moto">
+        <img src="jalan.jpg" alt="Jalan">
+        <img src="peace.jpg" alt="Peace">
+        <img src="duduk.jpg" alt="Duduk">
+        <img src="dulu.jpg" alt="Dulu">
+        <video src="test.mov" controls></video>
+    </div>
+
+</body>
+</html>
